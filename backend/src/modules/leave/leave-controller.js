@@ -7,6 +7,7 @@ const handleMakeNewPolicy = asyncHandler(async (req, res) => {
     res.json(newPolicy);
 });
 
+//get leave 
 const handleGetLeavePolicies = asyncHandler(async (req, res) => {
     const leavePolicies = await fetchLeavePolicies();
     res.json({ leavePolicies });
